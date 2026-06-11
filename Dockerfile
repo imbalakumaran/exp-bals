@@ -16,11 +16,11 @@ WORKDIR /app
 COPY . .
 
 # PHP dependencies
-RUN composer install --no-dev --optimize-autoloader
+#RUN composer install --no-dev --optimize-autoloader
 
 # Frontend dependencies
-RUN npm install
-RUN npm run build
+#RUN npm install
+#RUN npm run build
 
 EXPOSE 8000
 
